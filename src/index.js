@@ -1,5 +1,6 @@
-const serverless = require("serverless-http");
-const express = require("express");
+import serverless from "serverless-http";
+import express from "express";
+
 const app = express();
 
 app.get("/", (req, res, next) => {
@@ -20,9 +21,9 @@ app.use((req, res, next) => {
   });
 });
 
-// this is for serverFull app
+// This is for serverful app
 // app.listen(3000, () => {
-//   console.log("port is running", 3000);
+//   console.log("Server is running on port", 3000);
 // });
 
-module.exports.handler = serverless(app);
+export const handler = serverless(app);

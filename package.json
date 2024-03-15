@@ -2,6 +2,7 @@
   "name": "serverless-nodejs-api",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "dev": "serverless offline --stage dev"
   },
