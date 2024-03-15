@@ -20,4 +20,9 @@ app.use((req, res, next) => {
   });
 });
 
+// this is for serverFull app
+// app.listen(3000, () => {
+//   console.log("port is running", 3000);
+// });
+
 module.exports.handler = serverless(app);
