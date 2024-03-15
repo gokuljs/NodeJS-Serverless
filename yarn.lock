@@ -2369,7 +2369,7 @@ dotenv-expand@^10.0.0:
   resolved "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-10.0.0.tgz"
   integrity sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==
 
-dotenv@^16.3.1:
+dotenv@^16.0.3, dotenv@^16.3.1:
   version "16.4.5"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
@@ -4533,6 +4533,15 @@ serve-static@1.15.0:
     parseurl "~1.3.3"
     send "0.18.0"
 
+serverless-dotenv-plugin@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/serverless-dotenv-plugin/-/serverless-dotenv-plugin-6.0.0.tgz"
+  integrity sha512-8tLVNwHfDO0sBz6+m+DLTZquRk0AZq9rzqk3kphm1iIWKfan9R7RKt4hdq3eQ0kmDoqzudjPYBEXAJ5bUNKeGQ==
+  dependencies:
+    chalk "^4.1.2"
+    dotenv "^16.0.3"
+    dotenv-expand "^10.0.0"
+
 serverless-http@^3.1.1:
   version "3.2.0"
   resolved "https://registry.npmjs.org/serverless-http/-/serverless-http-3.2.0.tgz"
@@ -4568,7 +4577,7 @@ serverless-offline@^13.3.3:
     velocityjs "^2.0.6"
     ws "^8.16.0"
 
-serverless@^3.2.0:
+serverless@^3.2.0, "serverless@1 || 2 || pre-3 || 3":
   version "3.38.0"
   resolved "https://registry.npmjs.org/serverless/-/serverless-3.38.0.tgz"
   integrity sha512-NJE1vOn8XmQEqfU9UxmVhkUFaCRmx6FhYw/jITN863WlOt4Y3PQbj3hwQyIb5QS1ZrXFq5ojklwewUXH7xGpdA==
