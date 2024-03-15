@@ -2,6 +2,7 @@
   "name": "serverless-nodejs-api",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "dev": "serverless offline --stage dev"
   },
@@ -13,6 +14,7 @@
   },
   "devDependencies": {
     "drizzle-kit": "^0.20.14",
+    "serverless-dotenv-plugin": "^6.0.0",
     "serverless-offline": "^13.3.3"
   }
 }

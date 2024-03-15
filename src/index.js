@@ -1,10 +1,13 @@
-const serverless = require("serverless-http");
-const express = require("express");
+import serverless from "serverless-http";
+import express from "express";
+
 const app = express();
 
 app.get("/", (req, res, next) => {
   return res.status(200).json({
     message: "Hello from root!",
+    databaseURl: process.env.DATABASE_URL ?? "",
+    debug: process.env.DEBUG,
   });
 });
 
@@ -20,9 +23,9 @@ app.use((req, res, next) => {
   });
 });
 
-// this is for serverFull app
+// This is for serverful app
 // app.listen(3000, () => {
-//   console.log("port is running", 3000);
+//   console.log("Server is running on port", 3000);
 // });
 
-module.exports.handler = serverless(app);
+export const handler = serverless(app);
